@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
+
+body {
+  font: 10px sans-serif;
+  background-color: #bccef7;
+  /* overflow-x: hidden; */
+  /* overflow-y: hidden; */
+}
+
+h1.title {
+  font-size: 40px;
+  color: #15265b;
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  font-weight: 600;
+}
+
+h3.subtitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #15265b;
+  font-family: 'Fjalla One', sans-serif;
+  margin: 10px;
+}
+
+p.instruct {
+  font-size: 16px;
+  font-weight: 600;
+  color: #15265b;
+  font-family: 'Fira Sans', sans-serif;
+  padding: 0 20px;
+}
+
+select {
+  display: block;
+  background-color: #6c757d;
+  color: #fff;
+  border: #6c757d;
+  font-weight: 400;
+  font-family: Arial;
+  padding: 10px;
+  border-radius: 6px;
+  transition: color .15s;
+}
+
+.source {
+  padding: 10px;
+}
+
+.bar {
+  fill: purple;
+  opacity: 0.8;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: none;
+  shape-rendering: crispEdges;
+}
+
+.legend {
+  display: flex;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.0em;
+  justify-content: center;
+  flex-flow: wrap;
+}
+
+p.text{
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: Arial;
+}
+
+.squareBox1 {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  background: #fff;
+  padding: 6px;
+}
+
+.squareBox2 {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  background: #ffeda0;
+  padding: 6px;
+}
+
+.squareBox3 {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  background: #feb24c;
+  padding: 6px;
+}
+
+.squareBox4 {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  background: #fd8d3c;
+  padding: 6px;
+}
+
+.squareBox5 {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  background: #fc4e2a;
+  padding: 6px;
+}
+
+.squareBox6 {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  background: #e31a1c;
+  padding: 6px;
+}
+
+.squareBox7 {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  background: #bd0026;
+  padding: 6px;
+}
+
+#tooltip {
+  font-family: sans-serif;
+  color: #454545;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  display: none;
+  position: absolute;
+  font-size: 10px;
+}

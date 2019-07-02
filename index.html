@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+    <script src="http://d3js.org/d3.v4.min.js"></script>
+    <script src="http://d3js.org/queue.v1.min.js"></script>
+    <script src="http://d3js.org/topojson.v1.min.js"></script>
+
+
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.13.0/d3-legend.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+
+
+
+    <div class="full_container">
+        <h1 class="title">Dear Mona Followup: Where Do People Drink The Most Beer, Wine And Spirits?</h1>
+
+        <p class="instruct">In these graphics, we are showing how many glasses of wine, cans of beers, shots of spirits, and the total litres of pure alcohol that were drunk by people in these countries.</p>
+        <div class="content_container">
+
+            <div class="bar_container">
+                <h3 class="subtitle">Beer, Spirit, and Wine Servings per Country</h3>
+
+                <div id="bar_chart"></div>
+            </div>
+            <div class="map_container">
+
+                <h3 class="subtitle">World Map of Total Litres of Pure Alcohol</h3>
+
+                <div class = "legend">
+                    <div class = "legend_piece">
+                        <div class = "squareBox1"></div>
+                        <p class = "text">0</p>
+                    </div>
+                    <div class = "legend_piece">
+                        <div class = "squareBox2"></div>
+                        <p class = "text">2.5</p>
+                    </div>
+                    <div class = "legend_piece">
+                        <div class = "squareBox3"></div>
+                        <p class = "text">5.0</p>
+                    </div>
+                    <div class = "legend_piece">
+                        <div class = "squareBox4"></div>
+                        <p class = "text">7.5</p>
+                    </div>
+                    <div class = "legend_piece">
+                        <div class = "squareBox5"></div>
+                        <p class = "text">10</p>
+                    </div>
+                    <div class = "legend_piece">
+                        <div class = "squareBox6"></div>
+                        <p class = "text">12.5</p>
+                    </div>
+                    <div class = "legend_piece">
+                        <div class = "squareBox7"></div>
+                        <p class = "text">16</p>
+                    </div>
+                </div>
+                <div id="map"></div>
+
+                <div id="tooltip" class="hidden" style="left: 690px; top: 814px;">
+                    <p><strong>Country: </strong><span id="country"></span></p>
+                    <p><strong>Total Litres of Pure Alcohol: </strong><span id="litres_value"></span></p>
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="source">
+
+            <p><strong>Units: </strong><span id="units">Average serving sizes per person</span></p>
+            <p><strong>Source:</strong><span id="source">World Health Organisation, Global Information System on Alcohol and Health (GISAH), 2010</span></p>`
+        </div>
+
+    </div>
+</body>
+
+<script src="bar_chart.js"></script>
+<script src="world_map.js"></script>
+
+</html>
